@@ -50,15 +50,17 @@ with open('./Images/leonLogo.png', 'rb') as infile:
 </pre>
 </ul>
 </li>
+<li>The encrypted image file output_image.enc will be generated on the same path, and the key used to encrypt the image will be printed on the termina</li>
+
 </ol>
 
 ### Decryption
 
 <ol>
 <li>
-open decrypt.py  file by default [after running the main.py file "output_image.enc"] will be generate on the same path and a The was used to encrypt the image will be printed on the terminal
+Open decrypt.py. By default, output_image.enc file will be generated on the same path after running main.py.
 </li>
-<li>Copy the Key and update the key variable in  the decrypt.py file
+<li>Copy the key from the terminal and update the key variable in decrypt.py
 <pre>
 <code>
 with open('output_image.enc', 'rb') as infile:
@@ -68,7 +70,7 @@ key = b'\x81\x07P\xe8\x11\x93\xee\xbf\xea,\x08]\xad\xc7A\x7f' #you will update t
 </code>
 </pre>
 </li>
-<li>Run the decrypt.py file and the plain image with decrypted_image.jpg will be generate
+<li>The Encrypted image will be decrypted and saved as decrypted_image.jpg.
 <pre>
 <code>python decrypt.py</code>
 </pre>
