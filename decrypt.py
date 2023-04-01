@@ -5,7 +5,7 @@ BLOCK_SIZE = 16
 with open('output_image.enc', 'rb') as infile:
     iv = infile.read(BLOCK_SIZE)
     ciphertext = infile.read()
-key = b'\x81\x07P\xe8\x11\x93\xee\xbf\xea,\x08]\xad\xc7A\x7f'
+key = b'\x81\x07P\xe8\x11\x93\xee\xbf\xea,\x08]\xad\xc7A\x7f' 
 cipher = AES.new(key, AES.MODE_CBC, iv)
 
 plaintext = cipher.decrypt(ciphertext)
